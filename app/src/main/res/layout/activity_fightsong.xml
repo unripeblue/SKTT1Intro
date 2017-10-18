@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/black"
     tools:context="com.example.the.sktt1intro.miniactivity.FightsongActivity">
 
     <TextView
         android:textSize="18sp"
         android:layout_marginTop="12dp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,7 +19,7 @@
 
     <TextView
         android:textSize="17sp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
