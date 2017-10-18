@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.the.sktt1intro.miniactivity.FightsongActivity">
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="응원가 감상"/>
+
+    <TextView
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SK텔레콤 T1 응원가를 들으시려면\n아래 응원가를 선택해 주세요"/>
+    
+    
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/winnerT1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:layout_gravity="left"
+        android:id="@+id/tempimg"
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="35dp" />
+
+    <ImageView
+        android:id="@+id/t1lysic"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="260dp" />
+
+</LinearLayout>

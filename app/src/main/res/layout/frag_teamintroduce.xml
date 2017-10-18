@@ -176,7 +176,7 @@
                     <ImageView
                         android:layout_marginTop="10dp"
                         android:id="@+id/introMain"
-                        android:layout_width="360dp"
+                        android:layout_width="match_parent"
                         android:layout_height="380dp"
                         android:layout_gravity="center" />
 

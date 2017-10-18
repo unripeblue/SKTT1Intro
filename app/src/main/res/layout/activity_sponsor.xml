@@ -1,9 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.the.sktt1intro.miniactivity.SponsorActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="DOUYU" />
+
+            <ImageView
+                android:id="@+id/douyu"
+                android:layout_width="match_parent"
+                android:layout_height="66dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="TWITCH" />
+
+            <ImageView
+                android:id="@+id/twitch"
+                android:layout_width="match_parent"
+                android:layout_height="66dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="ASUS" />
+
+            <ImageView
+                android:id="@+id/asus"
+                android:layout_width="match_parent"
+                android:layout_height="66dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="ESSENCORE KLEVV" />
+
+            <ImageView
+                android:id="@+id/essencore"
+                android:layout_width="match_parent"
+                android:layout_height="66dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEAM RAZER" />
+
+            <ImageView
+                android:id="@+id/razer"
+                android:layout_width="match_parent"
+                android:layout_height="66dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Donga otsuka" />
+
+            <ImageView
+                android:id="@+id/donga"
+                android:layout_width="match_parent"
+                android:layout_height="66dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

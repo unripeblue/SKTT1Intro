@@ -1,6 +1,7 @@
 package com.example.the.sktt1intro.fragment;
 
 import android.app.Fragment;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -11,6 +12,9 @@ import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.example.the.sktt1intro.R;
+import com.example.the.sktt1intro.miniactivity.EmblemActivity;
+import com.example.the.sktt1intro.miniactivity.FightsongActivity;
+import com.example.the.sktt1intro.miniactivity.SponsorActivity;
 
 /**
  * Created by the on 2017-10-16.
@@ -55,7 +59,27 @@ public class TeamIntroduceFragment extends Fragment{
     }
 
     private void setupEvents() {
-
+        sponsor.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), SponsorActivity.class);
+                startActivity(intent);
+            }
+        });
+        fightsong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), FightsongActivity.class);
+                startActivity(intent);
+            }
+        });
+        emblem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), EmblemActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
