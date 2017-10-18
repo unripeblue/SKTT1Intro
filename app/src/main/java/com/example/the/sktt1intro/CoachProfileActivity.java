@@ -5,28 +5,27 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.example.the.sktt1intro.data.Player;
+import com.example.the.sktt1intro.data.Coach;
 
-public class PlayerProfileActivity extends BaseActivity {
+public class CoachProfileActivity extends BaseActivity {
 
-    Player mPlayer = null;
+    Coach mCoach = null;
 
     private android.widget.TextView nameTxt;
     private android.widget.TextView birthdayTxt;
+    private android.widget.TextView nickNameTxt;
     private android.widget.TextView favoriteTxt;
+    private android.widget.TextView specialTxt;
     private android.widget.TextView gameIdTxt;
-    private android.widget.TextView positionTxt;
-    private android.widget.TextView bestChampTxt;
     private android.widget.TextView useKeyboardTxt;
     private android.widget.TextView useMouseTxt;
     private android.widget.ImageView profilePic;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_player_profile);
-        mPlayer = (Player) getIntent().getSerializableExtra("플레이어정보");
+        setContentView(R.layout.activity_coach_profile);
+        mCoach = (Coach) getIntent().getSerializableExtra("코치정보");
         bindViews();
         setValues();
         setupEvents();
@@ -39,25 +38,25 @@ public class PlayerProfileActivity extends BaseActivity {
 
     @Override
     public void setValues() {
-        nameTxt.setText(mPlayer.getName());
-        birthdayTxt.setText(mPlayer.getBirthday());
-        favoriteTxt.setText(mPlayer.getFavorite());
-        gameIdTxt.setText(mPlayer.getGameId());
-        positionTxt.setText(mPlayer.getPosition());
-        bestChampTxt.setText(mPlayer.getBestChamp());
-        useKeyboardTxt.setText(mPlayer.getKeyboard());
-        useMouseTxt.setText(mPlayer.getMouse());
-        Glide.with(this).load(mPlayer.getProfileImgURL()).into(profilePic);
+        nameTxt.setText(mCoach.getName());
+        birthdayTxt.setText(mCoach.getBirthday());
+        nickNameTxt.setText(mCoach.getNickname());
+        favoriteTxt.setText(mCoach.getFavorite());
+        specialTxt.setText(mCoach.getSpecial());
+        gameIdTxt.setText(mCoach.getGameId());
+        useKeyboardTxt.setText(mCoach.getKeyboard());
+        useMouseTxt.setText(mCoach.getMouse());
+        Glide.with(this).load(mCoach.getProfileImgURL()).into(profilePic);
     }
 
     @Override
     public void bindViews() {
         this.useMouseTxt = (TextView) findViewById(R.id.useMouseTxt);
         this.useKeyboardTxt = (TextView) findViewById(R.id.useKeyboardTxt);
-        this.bestChampTxt = (TextView) findViewById(R.id.bestChampTxt);
-        this.positionTxt = (TextView) findViewById(R.id.positionTxt);
         this.gameIdTxt = (TextView) findViewById(R.id.gameIdTxt);
+        this.specialTxt = (TextView) findViewById(R.id.specialTxt);
         this.favoriteTxt = (TextView) findViewById(R.id.favoriteTxt);
+        this.nickNameTxt = (TextView) findViewById(R.id.nickNameTxt);
         this.birthdayTxt = (TextView) findViewById(R.id.birthdayTxt);
         this.nameTxt = (TextView) findViewById(R.id.nameTxt);
         this.profilePic = (ImageView) findViewById(R.id.profilePic);

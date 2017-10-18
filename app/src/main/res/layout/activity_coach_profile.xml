@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.the.sktt1intro.PlayerProfileActivity">
+    tools:context="com.example.the.sktt1intro.CoachProfileActivity">
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,7 +47,7 @@
                         android:id="@+id/nameTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="이재완"
+                        android:text="꼬치"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -83,6 +84,28 @@
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
+                        android:text="별명"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/nickNameTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="김정균"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
                         android:text="취미"
                         android:textSize="16sp" />
 
@@ -90,7 +113,29 @@
                         android:id="@+id/favoriteTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="게임, 음악감상"
+                        android:text="SKT T1 Wolf"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="특기"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/specialTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SUPPORT"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -112,51 +157,7 @@
                         android:id="@+id/gameIdTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SKT T1 Wolf"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="포지션"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/positionTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="SUPPORT"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="주 챔피언"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/bestChampTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="블리츠크랭크"
+                        android:text="김정균"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
 
@@ -216,4 +217,4 @@
     </ScrollView>
 
 
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,6 +1,8 @@
 package com.example.the.sktt1intro.fragment;
 
 import android.app.Fragment;
+import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -10,7 +12,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.the.sktt1intro.CoachProfileActivity;
+import com.example.the.sktt1intro.PlayerProfileActivity;
 import com.example.the.sktt1intro.R;
+import com.example.the.sktt1intro.data.Coach;
+import com.example.the.sktt1intro.util.GlobalData;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by the on 2017-10-16.
@@ -19,7 +28,7 @@ import com.example.the.sktt1intro.R;
 public class PlayerIntroduceFragment extends Fragment {
 
 
-    private android.widget.Button headCoachBtn;
+    private android.widget.Button coachBtn0;
     private android.widget.Button coachBtn1;
     private android.widget.Button coachBtn2;
     private ImageView top1;
@@ -30,6 +39,7 @@ public class PlayerIntroduceFragment extends Fragment {
     private ImageView mid2;
     private ImageView jungle2;
     private ImageView sup;
+
 
     @Nullable
     @Override
@@ -45,7 +55,7 @@ public class PlayerIntroduceFragment extends Fragment {
         this.top1 = (ImageView) view.findViewById(R.id.top1);
         this.coachBtn2 = (Button) view.findViewById(R.id.coachBtn2);
         this.coachBtn1 = (Button) view.findViewById(R.id.coachBtn1);
-        this.headCoachBtn = (Button) view.findViewById(R.id.headCoachBtn);
+        this.coachBtn0 = (Button) view.findViewById(R.id.coachBtn0);
         return view;
     }
 
@@ -68,6 +78,41 @@ public class PlayerIntroduceFragment extends Fragment {
         }
 
     private void setupEvents() {
+
+        View.OnClickListener coachListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int cNum = Integer.parseInt(view.getTag().toString());
+                Intent intent = new Intent(getActivity(), CoachProfileActivity.class);
+                intent.putExtra("코치정보", GlobalData.coachs.get(cNum));
+
+                startActivity(intent);
+            }
+        };
+
+        coachBtn0.setOnClickListener(coachListener);
+        coachBtn1.setOnClickListener(coachListener);
+        coachBtn2.setOnClickListener(coachListener);
+
+        View.OnClickListener playerListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                int pNum = Integer.parseInt(view.getTag().toString());
+                Intent intent = new Intent(getActivity(), PlayerProfileActivity.class);
+                intent.putExtra("플레이어정보", GlobalData.players.get(pNum));
+
+                startActivity(intent);
+            }
+        };
+
+        top1.setOnClickListener(playerListener);
+        mid1.setOnClickListener(playerListener);
+        jungle1.setOnClickListener(playerListener);
+        adc.setOnClickListener(playerListener);
+        top2.setOnClickListener(playerListener);
+        mid2.setOnClickListener(playerListener);
+        jungle2.setOnClickListener(playerListener);
+        sup.setOnClickListener(playerListener);
 
     }
 
