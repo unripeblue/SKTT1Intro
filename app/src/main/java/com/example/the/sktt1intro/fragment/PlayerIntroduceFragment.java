@@ -65,8 +65,7 @@ public class PlayerIntroduceFragment extends Fragment {
         Glide.with(this).load("http://www.sksports.net/Common/Attach/T1LOLPlayer/thum_mid_khn_1111.png").into(mid2);
         Glide.with(this).load("http://www.sksports.net/Common/Attach/T1LOLPlayer/thum_jungle_hwh.png").into(jungle2);
         Glide.with(this).load("http://www.sksports.net/Common/Attach/T1LOLPlayer/thum_support_ljw_111.png").into(sup);
-
-    }
+        }
 
     private void setupEvents() {
 

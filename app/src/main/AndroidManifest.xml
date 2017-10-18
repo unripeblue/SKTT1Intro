@@ -23,7 +23,8 @@
         </activity>
         <activity android:name=".miniactivity.SponsorActivity" />
         <activity android:name=".miniactivity.FightsongActivity" />
-        <activity android:name=".miniactivity.EmblemActivity"></activity>
+        <activity android:name=".miniactivity.EmblemActivity" />
+        <activity android:name=".PlayerProfileActivity"></activity>
     </application>
 
 </manifest>
