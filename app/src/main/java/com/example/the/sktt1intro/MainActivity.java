@@ -27,6 +27,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public void setupEvents() {
+
         final LinearLayout[] frags = {homeFragmentLayout, scheduleFragmentLayout,
                 teamIntroduceLayout, playerIntroduceLayout};
 
