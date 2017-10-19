@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#13212A"
-    tools:context="com.example.the.sktt1intro.MainActivity">
+    tools:context="com.seokyeong.the.sktt1intro.MainActivity">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
             <fragment
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                class="com.example.the.sktt1intro.fragment.HomeFragment"
+                class="com.seokyeong.the.sktt1intro.fragment.HomeFragment"
                 tools:layout="@layout/frag_home"/>
 
         </LinearLayout>
@@ -35,7 +35,7 @@
             <fragment
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                class="com.example.the.sktt1intro.fragment.ScheduleFragment"
+                class="com.seokyeong.the.sktt1intro.fragment.ScheduleFragment"
                 tools:layout="@layout/frag_schedule"/>
 
         </LinearLayout>
@@ -50,7 +50,7 @@
             <fragment
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                class="com.example.the.sktt1intro.fragment.TeamIntroduceFragment"
+                class="com.seokyeong.the.sktt1intro.fragment.TeamIntroduceFragment"
                 tools:layout="@layout/frag_teamintroduce"/>
 
         </LinearLayout>
@@ -64,7 +64,7 @@
             <fragment
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                class="com.example.the.sktt1intro.fragment.PlayerIntroduceFragment"
+                class="com.seokyeong.the.sktt1intro.fragment.PlayerIntroduceFragment"
                 tools:layout="@layout/frag_playerintroduce"/>
 
         </LinearLayout>

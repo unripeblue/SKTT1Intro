@@ -1,4 +1,4 @@
-package com.example.the.sktt1intro.data;
+package com.seokyeong.the.sktt1intro.data;
 
 import java.io.Serializable;
 
@@ -6,29 +6,29 @@ import java.io.Serializable;
  * Created by the on 2017-10-18.
  */
 
-public class Player implements Serializable {
+public class Coach implements Serializable {
     private int userId;
     private String name;
     private String birthday;
+    private String nickname;
     private String favorite;
+    private String special;
     private String gameId;
-    private String position;
-    private String bestChamp;
     private String keyboard;
     private String mouse;
     private String profileImgURL;
 
-    public Player() {
+    public Coach() {
     }
 
-    public Player(int userId, String name, String birthday, String favorite, String gameId, String position, String bestChamp, String keyboard, String mouse, String profileImgURL) {
+    public Coach(int userId, String name, String birthday, String nickname, String favorite, String special, String gameId, String keyboard, String mouse, String profileImgURL) {
         this.userId = userId;
         this.name = name;
         this.birthday = birthday;
+        this.nickname = nickname;
         this.favorite = favorite;
+        this.special = special;
         this.gameId = gameId;
-        this.position = position;
-        this.bestChamp = bestChamp;
         this.keyboard = keyboard;
         this.mouse = mouse;
         this.profileImgURL = profileImgURL;
@@ -58,6 +58,14 @@ public class Player implements Serializable {
         this.birthday = birthday;
     }
 
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
     public String getFavorite() {
         return favorite;
     }
@@ -66,28 +74,20 @@ public class Player implements Serializable {
         this.favorite = favorite;
     }
 
+    public String getSpecial() {
+        return special;
+    }
+
+    public void setSpecial(String special) {
+        this.special = special;
+    }
+
     public String getGameId() {
         return gameId;
     }
 
     public void setGameId(String gameId) {
         this.gameId = gameId;
-    }
-
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
-    }
-
-    public String getBestChamp() {
-        return bestChamp;
-    }
-
-    public void setBestChamp(String bestChamp) {
-        this.bestChamp = bestChamp;
     }
 
     public String getKeyboard() {

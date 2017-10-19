@@ -1,7 +1,7 @@
-package com.example.the.sktt1intro.util;
+package com.seokyeong.the.sktt1intro.util;
 
-import com.example.the.sktt1intro.data.Coach;
-import com.example.the.sktt1intro.data.Player;
+import com.seokyeong.the.sktt1intro.data.Coach;
+import com.seokyeong.the.sktt1intro.data.Player;
 
 import java.util.ArrayList;
 import java.util.List;

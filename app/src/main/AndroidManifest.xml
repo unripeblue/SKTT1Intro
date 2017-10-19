@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.the.sktt1intro">
+    package="com.seokyeong.the.sktt1intro">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -13,19 +13,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name="com.seokyeong.the.sktt1intro.MainActivity" />
+        <activity android:name="com.seokyeong.the.sktt1intro.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".miniactivity.SponsorActivity" />
-        <activity android:name=".miniactivity.FightsongActivity" />
-        <activity android:name=".miniactivity.EmblemActivity" />
-        <activity android:name=".PlayerProfileActivity" />
-        <activity android:name=".CoachProfileActivity"></activity>
+        <activity android:name="com.seokyeong.the.sktt1intro.miniactivity.SponsorActivity" />
+        <activity android:name="com.seokyeong.the.sktt1intro.miniactivity.FightsongActivity" />
+        <activity android:name="com.seokyeong.the.sktt1intro.miniactivity.EmblemActivity" />
+        <activity android:name="com.seokyeong.the.sktt1intro.PlayerProfileActivity" />
+        <activity android:name="com.seokyeong.the.sktt1intro.CoachProfileActivity"></activity>
     </application>
 
 </manifest>

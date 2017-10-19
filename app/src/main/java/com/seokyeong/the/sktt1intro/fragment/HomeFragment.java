@@ -1,4 +1,4 @@
-package com.example.the.sktt1intro.fragment;
+package com.seokyeong.the.sktt1intro.fragment;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.the.sktt1intro.R;
+import com.seokyeong.the.sktt1intro.R;
 
 /**
  * Created by the on 2017-10-16.

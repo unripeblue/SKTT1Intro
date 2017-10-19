@@ -1,4 +1,4 @@
-package com.example.the.sktt1intro.fragment;
+package com.seokyeong.the.sktt1intro.fragment;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -11,10 +11,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.example.the.sktt1intro.R;
-import com.example.the.sktt1intro.miniactivity.EmblemActivity;
-import com.example.the.sktt1intro.miniactivity.FightsongActivity;
-import com.example.the.sktt1intro.miniactivity.SponsorActivity;
+import com.seokyeong.the.sktt1intro.R;
+import com.seokyeong.the.sktt1intro.miniactivity.EmblemActivity;
+import com.seokyeong.the.sktt1intro.miniactivity.FightsongActivity;
+import com.seokyeong.the.sktt1intro.miniactivity.SponsorActivity;
 
 /**
  * Created by the on 2017-10-16.

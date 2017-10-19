@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#13212A"
-    tools:context="com.example.the.sktt1intro.miniactivity.FightsongActivity">
+    tools:context="com.seokyeong.the.sktt1intro.miniactivity.FightsongActivity">
 
     <TextView
         android:textSize="18sp"

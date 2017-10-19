@@ -1,11 +1,11 @@
-package com.example.the.sktt1intro;
+package com.seokyeong.the.sktt1intro;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.example.the.sktt1intro.util.GlobalData;
+import com.seokyeong.the.sktt1intro.util.GlobalData;
 
 public class LoginActivity extends BaseActivity {
 

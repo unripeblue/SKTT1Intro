@@ -1,4 +1,4 @@
-package com.example.the.sktt1intro;
+package com.seokyeong.the.sktt1intro;
 
 import org.junit.Test;
 

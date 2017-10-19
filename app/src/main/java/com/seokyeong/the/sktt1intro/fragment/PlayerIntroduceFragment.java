@@ -1,4 +1,4 @@
-package com.example.the.sktt1intro.fragment;
+package com.seokyeong.the.sktt1intro.fragment;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -11,10 +11,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
-import com.example.the.sktt1intro.CoachProfileActivity;
-import com.example.the.sktt1intro.PlayerProfileActivity;
-import com.example.the.sktt1intro.R;
-import com.example.the.sktt1intro.util.GlobalData;
+import com.seokyeong.the.sktt1intro.CoachProfileActivity;
+import com.seokyeong.the.sktt1intro.PlayerProfileActivity;
+import com.seokyeong.the.sktt1intro.R;
+import com.seokyeong.the.sktt1intro.util.GlobalData;
 
 /**
  * Created by the on 2017-10-16.

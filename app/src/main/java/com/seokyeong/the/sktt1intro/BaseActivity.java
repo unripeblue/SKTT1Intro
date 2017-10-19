@@ -1,4 +1,4 @@
-package com.example.the.sktt1intro;
+package com.seokyeong.the.sktt1intro;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
