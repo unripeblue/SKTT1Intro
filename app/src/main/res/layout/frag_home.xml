@@ -19,13 +19,13 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="240dp"
                 android:src="@drawable/allimg" />
 
             <ImageView
                 android:layout_width="300dp"
-                android:layout_height="100dp"
-                android:src="@drawable/t1logo1" />
+                android:layout_height="150dp"
+                android:src="@drawable/logoblank" />
 
 
             <LinearLayout
@@ -35,10 +35,12 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="공지사항" />
+                    android:text="누가 E-세상을 지배하는가?\n항상 승리하는 모습으로\n 팬 여러분께 기쁨을 안겨드리겠습니다." />
 
             </LinearLayout>
 

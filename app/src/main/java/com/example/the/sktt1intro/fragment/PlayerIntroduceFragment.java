@@ -2,24 +2,19 @@ package com.example.the.sktt1intro.fragment;
 
 import android.app.Fragment;
 import android.content.Intent;
-import android.nfc.Tag;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.bumptech.glide.Glide;
 import com.example.the.sktt1intro.CoachProfileActivity;
 import com.example.the.sktt1intro.PlayerProfileActivity;
 import com.example.the.sktt1intro.R;
-import com.example.the.sktt1intro.data.Coach;
 import com.example.the.sktt1intro.util.GlobalData;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by the on 2017-10-16.
@@ -28,9 +23,9 @@ import java.util.List;
 public class PlayerIntroduceFragment extends Fragment {
 
 
-    private android.widget.Button coachBtn0;
-    private android.widget.Button coachBtn1;
-    private android.widget.Button coachBtn2;
+    private LinearLayout coachBtn0;
+    private LinearLayout coachBtn1;
+    private LinearLayout coachBtn2;
     private ImageView top1;
     private ImageView mid1;
     private ImageView jungle1;
@@ -39,23 +34,39 @@ public class PlayerIntroduceFragment extends Fragment {
     private ImageView mid2;
     private ImageView jungle2;
     private ImageView sup;
+    private LinearLayout top1Lout;
+    private LinearLayout mid1Lout;
+    private LinearLayout jungle1Lout;
+    private LinearLayout adcLout;
+    private LinearLayout top2Lout;
+    private LinearLayout mid2Lout;
+    private LinearLayout jungle2Lout;
+    private LinearLayout supLout;
 
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.frag_playerintroduce, container, false);
+        this.coachBtn2 = (LinearLayout) view.findViewById(R.id.coachBtn2);
+        this.coachBtn1 = (LinearLayout) view.findViewById(R.id.coachBtn1);
+        this.coachBtn0 = (LinearLayout) view.findViewById(R.id.coachBtn0);
+        this.supLout = (LinearLayout) view.findViewById(R.id.supLout);
         this.sup = (ImageView) view.findViewById(R.id.sup);
+        this.jungle2Lout = (LinearLayout) view.findViewById(R.id.jungle2Lout);
         this.jungle2 = (ImageView) view.findViewById(R.id.jungle2);
+        this.mid2Lout = (LinearLayout) view.findViewById(R.id.mid2Lout);
         this.mid2 = (ImageView) view.findViewById(R.id.mid2);
+        this.top2Lout = (LinearLayout) view.findViewById(R.id.top2Lout);
         this.top2 = (ImageView) view.findViewById(R.id.top2);
+        this.adcLout = (LinearLayout) view.findViewById(R.id.adcLout);
         this.adc = (ImageView) view.findViewById(R.id.adc);
+        this.jungle1Lout = (LinearLayout) view.findViewById(R.id.jungle1Lout);
         this.jungle1 = (ImageView) view.findViewById(R.id.jungle1);
+        this.mid1Lout = (LinearLayout) view.findViewById(R.id.mid1Lout);
         this.mid1 = (ImageView) view.findViewById(R.id.mid1);
+        this.top1Lout = (LinearLayout) view.findViewById(R.id.top1Lout);
         this.top1 = (ImageView) view.findViewById(R.id.top1);
-        this.coachBtn2 = (Button) view.findViewById(R.id.coachBtn2);
-        this.coachBtn1 = (Button) view.findViewById(R.id.coachBtn1);
-        this.coachBtn0 = (Button) view.findViewById(R.id.coachBtn0);
         return view;
     }
 
@@ -105,14 +116,14 @@ public class PlayerIntroduceFragment extends Fragment {
             }
         };
 
-        top1.setOnClickListener(playerListener);
-        mid1.setOnClickListener(playerListener);
-        jungle1.setOnClickListener(playerListener);
-        adc.setOnClickListener(playerListener);
-        top2.setOnClickListener(playerListener);
-        mid2.setOnClickListener(playerListener);
-        jungle2.setOnClickListener(playerListener);
-        sup.setOnClickListener(playerListener);
+        top1Lout.setOnClickListener(playerListener);
+        mid1Lout.setOnClickListener(playerListener);
+        jungle1Lout.setOnClickListener(playerListener);
+        adcLout.setOnClickListener(playerListener);
+        top2Lout.setOnClickListener(playerListener);
+        mid2Lout.setOnClickListener(playerListener);
+        jungle2Lout.setOnClickListener(playerListener);
+        supLout.setOnClickListener(playerListener);
 
     }
 

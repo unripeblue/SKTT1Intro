@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#13212A"
     tools:context="com.example.the.sktt1intro.MainActivity">
 
     <FrameLayout
@@ -96,11 +97,12 @@
                 android:tag="0">
 
                 <ImageView
-                    android:layout_width="40dp"
+                    android:layout_width="80dp"
                     android:layout_height="40dp"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/icon1" />
 
                 <TextView
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="홈 / 공지사항" />
@@ -122,14 +124,15 @@
                 android:tag="1">
 
                 <ImageView
-                    android:layout_width="40dp"
+                    android:layout_width="80dp"
                     android:layout_height="40dp"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/icon2" />
 
                 <TextView
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="경기일정" />
+                    android:text="경기 일정" />
 
             </LinearLayout>
 
@@ -149,11 +152,12 @@
                 android:tag="2">
 
                 <ImageView
-                    android:layout_width="40dp"
+                    android:layout_width="80dp"
                     android:layout_height="40dp"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/icon3" />
 
                 <TextView
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="구단 소개" />
@@ -176,11 +180,12 @@
                 android:tag="3">
 
                 <ImageView
-                    android:layout_width="40dp"
+                    android:layout_width="80dp"
                     android:layout_height="40dp"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@drawable/icon4" />
 
                 <TextView
+                    android:textColor="@color/white"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="선수단 소개" />
