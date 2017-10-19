@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#13212A"
     tools:context="com.example.the.sktt1intro.PlayerProfileActivity">
 
     <ScrollView
@@ -12,6 +14,7 @@
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -24,6 +27,7 @@
 
 
             <LinearLayout
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -37,17 +41,18 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textColor="@color/white"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="이름"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:textColor="@color/white"
                         android:id="@+id/nameTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="누구게"
-                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>
@@ -59,17 +64,18 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textColor="@color/white"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="생년월일"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:textColor="@color/white"
                         android:id="@+id/birthdayTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1900. 1. 1"
-                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>
@@ -81,17 +87,18 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textColor="@color/white"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="취미"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:textColor="@color/white"
                         android:id="@+id/favoriteTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="게임, 음악감상"
-                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>
@@ -103,17 +110,18 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textColor="@color/white"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="게임 ID"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:textColor="@color/white"
                         android:id="@+id/gameIdTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hide On Bush"
-                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>
@@ -125,17 +133,18 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textColor="@color/white"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="포지션"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:textColor="@color/white"
                         android:id="@+id/positionTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="SUPPORT"
-                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>
@@ -147,17 +156,18 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textColor="@color/white"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="주 챔피언"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:textColor="@color/white"
                         android:id="@+id/bestChampTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="야스오"
-                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>
@@ -169,17 +179,18 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textColor="@color/white"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="사용 키보드"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:textColor="@color/white"
                         android:id="@+id/useKeyboardTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="짱짱키보드"
-                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>
@@ -191,17 +202,18 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:textColor="@color/white"
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
                         android:text="사용 마우스"
                         android:textSize="16sp" />
 
                     <TextView
+                        android:textColor="@color/white"
                         android:id="@+id/useMouseTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="짱짱마우스"
-                        android:textColor="@color/black"
                         android:textSize="16sp" />
 
                 </LinearLayout>

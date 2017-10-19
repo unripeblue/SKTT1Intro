@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.the.sktt1intro.util.GlobalData;
+
 public class LoginActivity extends BaseActivity {
 
     private android.widget.ImageView loginImg;
@@ -33,7 +35,7 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void setValues() {
-
+        GlobalData.initGlobalData();
     }
 
     @Override
