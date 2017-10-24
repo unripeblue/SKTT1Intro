@@ -3,13 +3,20 @@ package com.seokyeong.the.sktt1intro;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.seokyeong.the.sktt1intro.util.GlobalData;
 
 public class LoginActivity extends BaseActivity {
 
-    private android.widget.ImageView loginImg;
+    private android.widget.EditText idEdt;
+    private android.widget.EditText pwEdt;
+    private android.widget.CheckBox autoLoginCheckBox;
+    private android.widget.Button loginBtn;
+    private android.widget.Button signupBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +29,19 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void setupEvents() {
-        loginImg.setOnClickListener(new View.OnClickListener() {
+        loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(mContext, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        signupBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(mContext, SignupActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -40,6 +56,10 @@ public class LoginActivity extends BaseActivity {
 
     @Override
     public void bindViews() {
-        this.loginImg = (ImageView) findViewById(R.id.loginImg);
+        this.signupBtn = (Button) findViewById(R.id.signupBtn);
+        this.loginBtn = (Button) findViewById(R.id.loginBtn);
+        this.autoLoginCheckBox = (CheckBox) findViewById(R.id.autoLoginCheckBox);
+        this.pwEdt = (EditText) findViewById(R.id.pwEdt);
+        this.idEdt = (EditText) findViewById(R.id.idEdt);
     }
 }

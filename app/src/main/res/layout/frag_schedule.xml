@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical">
 
-
-    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/calendarView"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:mcv_selectionColor="#a9dbf0cb"
         app:mcv_showOtherDates="defaults" />
 
-
-    <ImageView
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:src="@drawable/sp"/>
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/detailViewLout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/gameNameTxt"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="(ex:2017 LOL Champions Korea 2Round)"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/blue_color" />
+
+            <TextView
+                android:textColor="@color/Red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:text="경기 결과 (상세 정보를 보려면 클릭하세요) "
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/blue_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="5dp"
+                    android:text="SKT : 3"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/leftwinImg"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/win"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="5dp"
+                    android:text="MVP : 2"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/rightwinImg"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/win"
+                    android:layout_width="40dp"
+                    android:layout_height="30dp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/noGameLout"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="해당 날짜엔 경기가 없습니다."/>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
 
 </LinearLayout>

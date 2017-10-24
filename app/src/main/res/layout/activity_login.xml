@@ -9,21 +9,85 @@
     android:background="#FFFFFF"
     tools:context="com.seokyeong.the.sktt1intro.LoginActivity">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
         <ImageView
-            android:id="@+id/loginImg"
-            android:layout_width="270dp"
-            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
             android:layout_gravity="center"
-            android:src="@drawable/t1logo1"/>
+            android:layout_width="360dp"
+            android:layout_height="200dp"
+            android:src="@drawable/t1logo1" />
 
-    <TextView
-        android:textSize="17sp"
-        android:textColor="@color/black"
-        android:layout_marginTop="30dp"
-        android:gravity="center"
-        android:layout_width="wrap_content"
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SKT T1 Team 소개 앱을 실행해 주셔서 감사합니다. \n 이 앱은 별도의 회원가입 절차 없이 사용 가능합니다.\n 계속 진행하시려면 위 SKT T1 로고를 클릭해 주세요!"/>
+        android:layout_margin="15dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자 ID" />
+
+        <EditText
+            android:id="@+id/idEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="ID를 입력하세요"/>
+
+
+        <!-- 비밀번호 입력 받기 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호" />
+
+        <EditText
+            android:id="@+id/pwEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="비밀번호를 입력하세요"/>
+        <!--비밀번호를 입력하세요. 안내 메세지-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/autoLoginCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="자동 로그인" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/loginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그인" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/signupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="간편 회원가입" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

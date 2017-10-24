@@ -4,12 +4,15 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,8 +22,6 @@ import org.json.JSONObject;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import kr.co.tjeit.restaurant.util.ContextUtil;
-import kr.co.tjeit.restaurant.util.ServerUtil;
 
 /**
  * Created by the on 2017-09-18.
@@ -29,7 +30,6 @@ import kr.co.tjeit.restaurant.util.ServerUtil;
 public class SignupActivity extends BaseActivity {
 
     int year, month, day;
-
 
     boolean idCheck = false;
     private EditText userIdEdt;
@@ -52,6 +52,7 @@ public class SignupActivity extends BaseActivity {
     private Button selectBirthDayBtn;
     private TextView bitrhDayTxt;
     private Button signUpBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,30 +82,51 @@ public class SignupActivity extends BaseActivity {
             }
         });
 
-        idDuplChkBtn.setOnClickListener(new View.OnClickListener() {
+        View.OnClickListener ocl = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ServerUtil.check_dupl_id(mContext, userIdEdt.getText().toString(), new ServerUtil.JsonResponseHandler() {
-                    @Override
-                    public void onResponse(JSONObject json) {
-                        try {
-                            idCheck = json.getBoolean("result");
-                            if (!idCheck) {
-                                AlertDialog.Builder alert = new AlertDialog.Builder(mContext);
-                                alert.setTitle("중복 확인");
-                                alert.setMessage("이미 사용중인 아이디입니다.");
-                                alert.setPositiveButton("확인", null);
-                                alert.show();
-                            } else {
-                                Toast.makeText(mContext, "사용 가능합니다.", Toast.LENGTH_SHORT).show();
-                            }
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                });
+                RadioButton[] radioButtons = {img1Btn, img2Btn, img3Btn, img4Btn, img5Btn, img6Btn};
+
+                for (RadioButton rd : radioButtons) {
+                    rd.setChecked(false);
+                }
+                ((RadioButton) view).setChecked(true);
             }
-        });
+        };
+
+
+        img1Btn.setOnClickListener(ocl);
+        img2Btn.setOnClickListener(ocl);
+        img3Btn.setOnClickListener(ocl);
+        img4Btn.setOnClickListener(ocl);
+        img5Btn.setOnClickListener(ocl);
+        img6Btn.setOnClickListener(ocl);
+
+
+//        idDuplChkBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                ServerUtil.check_dupl_id(mContext, userIdEdt.getText().toString(), new ServerUtil.JsonResponseHandler() {
+//                    @Override
+//                    public void onResponse(JSONObject json) {
+//                        try {
+//                            idCheck = json.getBoolean("result");
+//                            if (!idCheck) {
+//                                AlertDialog.Builder alert = new AlertDialog.Builder(mContext);
+//                                alert.setTitle("중복 확인");
+//                                alert.setMessage("이미 사용중인 아이디입니다.");
+//                                alert.setPositiveButton("확인", null);
+//                                alert.show();
+//                            } else {
+//                                Toast.makeText(mContext, "사용 가능합니다.", Toast.LENGTH_SHORT).show();
+//                            }
+//                        } catch (JSONException e) {
+//                            e.printStackTrace();
+//                        }
+//                    }
+//                });
+//            }
+//        });
 
         signUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -140,30 +162,30 @@ public class SignupActivity extends BaseActivity {
                 }
 
 
-                ServerUtil.sign_up(mContext,
-                        userIdEdt.getText().toString(),
-                        pwEdt.getText().toString(),
-                        userNameEdt.getText().toString(),
-                        "tempURL",
-                        bitrhDayTxt.getText().toString(),
-                        ContextUtil.getToken(mContext),
-                        new ServerUtil.JsonResponseHandler() {
-                            @Override
-                            public void onResponse(JSONObject json) {
-                                try {
-                                    if (json.getBoolean("result")) {
-                                        Toast.makeText(mContext, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
-                                        Intent myIntent = new Intent(SignupActivity.this, MainActivity.class);
-                                        startActivity(myIntent);
-                                        finish();
-                                    } else {
-                                        Toast.makeText(mContext, "회원가입에 실패했습니다. 아이디 변경후에 다시 시도해주세요.", Toast.LENGTH_SHORT).show();
-                                    }
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
-                            }
-                        });
+//                ServerUtil.sign_up(mContext,
+//                        userIdEdt.getText().toString(),
+//                        pwEdt.getText().toString(),
+//                        userNameEdt.getText().toString(),
+//                        "tempURL",
+//                        bitrhDayTxt.getText().toString(),
+//                        ContextUtil.getToken(mContext),
+//                        new ServerUtil.JsonResponseHandler() {
+//                            @Override
+//                            public void onResponse(JSONObject json) {
+//                                try {
+//                                    if (json.getBoolean("result")) {
+//                                        Toast.makeText(mContext, "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
+//                                        Intent myIntent = new Intent(SignupActivity.this, MainActivity.class);
+//                                        startActivity(myIntent);
+//                                        finish();
+//                                    } else {
+//                                        Toast.makeText(mContext, "회원가입에 실패했습니다. 아이디 변경후에 다시 시도해주세요.", Toast.LENGTH_SHORT).show();
+//                                    }
+//                                } catch (JSONException e) {
+//                                    e.printStackTrace();
+//                                }
+//                            }
+//                        });
             }
         });
     }

@@ -13,19 +13,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.seokyeong.the.sktt1intro.MainActivity" />
-        <activity android:name="com.seokyeong.the.sktt1intro.LoginActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.seokyeong.the.sktt1intro.miniactivity.SponsorActivity" />
-        <activity android:name="com.seokyeong.the.sktt1intro.miniactivity.FightsongActivity" />
-        <activity android:name="com.seokyeong.the.sktt1intro.miniactivity.EmblemActivity" />
-        <activity android:name="com.seokyeong.the.sktt1intro.PlayerProfileActivity" />
-        <activity android:name="com.seokyeong.the.sktt1intro.CoachProfileActivity"></activity>
+        <activity android:name=".miniactivity.SponsorActivity" />
+        <activity android:name=".miniactivity.FightsongActivity" />
+        <activity android:name=".miniactivity.EmblemActivity" />
+        <activity android:name=".PlayerProfileActivity" />
+        <activity android:name=".CoachProfileActivity" />
+        <activity android:name=".SignupActivity"></activity>
+        <activity android:name=".GameResultActivity"></activity>
     </application>
 
 </manifest>
