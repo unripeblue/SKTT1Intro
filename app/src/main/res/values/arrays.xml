@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="select_type">
+        <item>--분류--</item>
+        <item>자유</item>
+        <item>질문</item>
+        <item>건의</item>
+    </string-array>
+    
+</resources>

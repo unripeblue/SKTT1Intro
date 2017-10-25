@@ -142,10 +142,12 @@
     </LinearLayout>
 
     <TableLayout
+        android:stretchColumns="*"
+        android:padding="8dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="9dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -153,12 +155,139 @@
         <TableRow>
 
             <TextView
+                android:background="#EEEEEE"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="　"
                 android:textSize="18sp" />
+
+            <TextView
+                android:background="#EEEEEE"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SK텔레콤 T1"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/resultScoreSKTxt"
+                android:background="#EEEEEE"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/winOrLoseTxt"
+                android:background="#EEEEEE"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="승리"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/awayTeamScoreTxt"
+                android:background="#EEEEEE"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/awayTeamName"
+                android:background="#EEEEEE"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MVP"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/set1Table">
+
+            <TextView
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1세트"
+                android:textSize="15sp" />
+
+            <TextView
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SK텔레콤 T1"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="승"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="소환사의 협곡"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="패"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MVP"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/set2Table">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2세트"
+                android:textSize="15sp" />
 
             <TextView
                 android:textStyle="bold"
@@ -175,7 +304,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="2"
+                android:text="승"
                 android:textSize="16sp" />
 
 
@@ -184,17 +313,138 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="승리"
+                android:text="소환사의 협곡"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="패"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MVP"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/set3Table">
+
+            <TextView
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3세트"
                 android:textSize="15sp" />
 
+            <TextView
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SK텔레콤 T1"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="승"
+                android:textSize="16sp" />
+
 
             <TextView
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="0"
+                android:text="소환사의 협곡"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="패"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="MVP"
                 android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:visibility="gone"
+            android:id="@+id/set4Table">
+
+            <TextView
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="4세트"
+                android:textSize="15sp" />
+
+            <TextView
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SK텔레콤 T1"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:background="@color/white"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="승"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="소환사의 협곡"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="패"
+                android:textSize="17sp" />
 
 
             <TextView
@@ -206,17 +456,21 @@
                 android:textSize="16sp" />
         </TableRow>
 
-        <TableRow>
+        <TableRow
+            android:visibility="gone"
+            android:id="@+id/set5Table">
 
             <TextView
+                android:background="@color/white"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="1세트"
+                android:text="5세트"
                 android:textSize="15sp" />
 
             <TextView
+                android:background="@color/white"
                 android:textStyle="bold"
                 android:layout_weight="4"
                 android:layout_width="wrap_content"
@@ -227,6 +481,7 @@
 
 
             <TextView
+                android:background="@color/white"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

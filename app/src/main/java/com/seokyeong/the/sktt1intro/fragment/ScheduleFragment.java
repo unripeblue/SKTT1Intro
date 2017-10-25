@@ -65,6 +65,7 @@ public class ScheduleFragment extends Fragment {
             }
         });
 
+
     }
 
     private void setValues() {
